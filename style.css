@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Big+Shoulders+Display:wght@700&family=Flamenco&family=PT+Serif:wght@700&family=Source+Serif+4:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Big+Shoulders+Display:wght@700&family=Flamenco&family=PT+Serif:wght@700&family=Poppins:wght@500;600;700&family=Source+Serif+4:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor_principal {
+    width: 90%;
+    height: 1409px;
+    margin: auto;
+}
+
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5%;
+    margin-top: 20%;
+}
+
+.intro h2 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+.intro h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+.intro p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    width: 80%;
+}
+
+.perfil {
+    width: 40%;
+    height: 15em;
+    position: absolute;
+}
+
+img {
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+
+.cargo {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 6.9em;
+    top: 6.9em;
+    width: 100%;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+}
+
+.nombre {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 4%;
+}
+
+.p1 {
+    top: 20em;
+}
+
+.p2 {
+    top: 23em;
+    left: 13em;
+}
+
+.p3 {
+    top: 40em;
+}
+
+.p4 {
+    top: 43em;
+    left: 13em;
+}
+
+.p5 {
+    top: 60em;
+}
+
+.p6 {
+    top: 63em;
+    left: 13em;
+}
+
+
+/* INICIO MEDIA QUERY  */
+
+@media (min-width: 424px) {
+    .cargo {
+        top: 7.7em;
+        left: 7.7em;
+    }
+    .p2,
+    .p4,
+    .p6 {
+        left: 15em;
+    }
+}
+
+@media (min-width: 768px) {
+    .intro {
+        margin-top: 5%;
+    }
+    img {
+        width: 70%;
+        height: 70%;
+    }
+    .cargo {
+        top: 14.7em;
+    }
+    .p2,
+    .p4,
+    .p6 {
+        left: 30em;
+    }
+    .p3 {
+        top: 50em;
+    }
+    .p4 {
+        top: 53em;
+    }
+    .p5 {
+        top: 80em;
+    }
+    .p6 {
+        top: 83em;
+    }
+}
+
+@media (min-width: 1023px) {
+    img {
+        width: 50%;
+        height: 50%;
+    }
+    .cargo {
+        top: 19.7em;
+        left: 1em;
+    }
+    .p1 {
+        top: 25em;
+    }
+    .p2 {
+        top: 30em;
+        left: 25em;
+    }
+    .p3 {
+        top: 25em;
+        left: 45em;
+    }
+    .p4 {
+        top: 60em;
+        left: 3.2em;
+    }
+    .p5 {
+        top: 65em;
+        left: 25em;
+    }
+    .p6 {
+        top: 60em;
+        left: 45em;
+    }
+}
+
+@media (min-width: 1439px) {
+    .intro {
+        display: flex;
+        margin-left: 5%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .texto h3 {
+        margin: 0 0 2% 25%;
+    }
+    .texto p {
+        width: 45%;
+        margin-left: 25%;
+    }
+    img {
+        width: 30%;
+        height: 30%;
+    }
+    .p1,
+    .p4 {
+        left: 17em;
+    }
+    .p2,
+    .p5 {
+        left: 35em;
+    }
+    .p3,
+    .p6 {
+        left: 53em;
+    }
+    .cargo {
+        left: -10em;
+        top: 28.1em;
+    }
+    .nombre {
+        margin-top: 2%;
+    }
+}
+
+@media (min-width: 1919px) {
+    .intro {
+        justify-content: space-around;
+    }
+    .texto h3,
+    .texto p {
+        margin-left: 0;
+    }
+    .p1,
+    .p4 {
+        left: 22em;
+    }
+    .p2,
+    .p5 {
+        left: 44em;
+    }
+    .p3,
+    .p6 {
+        left: 64em;
+    }
+    .cargo {
+        left: -14em;
+        top: 37.5em;
+    }
+}
